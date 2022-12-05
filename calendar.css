@@ -1,0 +1,57 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Bradley Hand","Chalkduster";
+   box-sizing: border-box;
+   
+}
+
+#calendar_table {
+   background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("./backgroundimages/calanderback.png") no-repeat;
+   background-size:cover;  
+   font-size: 1em; 
+   font-family: "Bradley Hand","Chalkduster";
+   width: 100%;
+
+   box-shadow: #FFD1CA 0px 0px 1px,
+               #FFD1CA 0px 0px 5px, 
+               #FFD1CA 0px 0px 10px,
+               #FFD1CA 0px 0px 20px;               
+}
+
+#calendar_table caption {
+   caption-side: top; 
+   text-align: center;
+   padding-bottom: 20px; 
+   padding-top: 20px;
+   font-size: 5em; 
+   letter-spacing: 0.3em;
+   color: #DE3163 ;
+   text-shadow: 3px 3px white;
+   font-style:oblique;
+}
+
+.calendar_weekdays {
+   background-color: ivory;
+   width: 10%; 
+   font-size: 1em; 
+}
+
+.calendar_dates {
+   text-align: left; 
+   vertical-align: top;
+   font-size: 1em;
+   padding: 7px;
+   border: 1px double #FA8072;
+   background-color: rgb(255, 245, 238);
+   height: 90px;
+}
+
+#calendar_today {
+   font-weight: bold; 
+   color: white;
+   background-color: #F33A6A;
+   border: 2px solid black;
+}
+
+

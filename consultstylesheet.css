@@ -1,0 +1,327 @@
+/*This fulfills requirement 3.2.2 B "Contextual Selector- 'CSS universal selector'"*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bradley Hand","Chalkduster";
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("./backgroundimages/consultback.jpg") no-repeat; 
+    background-size:cover;                  /*This fulfills 3.2.2 E "CSS background styles a)Background-size"*/
+    min-height: 190vh;
+    background-position: center;
+}
+
+/*This fulfills requirement 3.2.2 B "Contextual Selector 'CSS element selector'"*/
+ul{
+    list-style-type: none; 
+    float: right;           
+    margin-top: 25px;       /*This fulfills 3.2.2 E "CSS background styles- c)Margins"*/
+    font-size: 2rem;        
+
+}
+ul li{
+    display: inline;      
+}
+ul li a{
+    text-decoration: none;           
+    text-shadow: 2px 2px hsl(330, 100%, 50%);             
+    color: black;        
+    padding: 5px 20px;                      /*This fulfills 3.2.2 E "CSS background styles b)Padding"*/                   
+    border-radius: 5rem;                  /*This fulfills 3.2.2 E "CSS background styles f)Rounded Corners"*/
+    transition: 0.6s ease;              
+}
+ul li a:hover{                         
+    background-color: hotpink;            
+    color: white;                      
+}
+ul li.active a{                        
+    background-color: hotpink;           
+    color: white;                     
+}
+ol li a:visited{                      
+    color: whitesmoke; 
+    transition: 0.6s ease;
+}
+/*This fulfills requirement 3.2.2 B "Contextual Selector 'CSS class selector'"*/
+.logo img{                   
+    width: 150px;         
+    height:auto; 
+    border-radius: 50%;  
+    float: left;          
+}
+.main{                      
+    max-width: 1200px;     
+    margin: auto;          
+
+}
+
+
+
+/*This fulfills 3.2.2 A "Formst using CSS f)Forms"*/
+/*This fulfills requirement 3.2.2 B "Contextual Selector 'CSS id selector'"*/
+form#consult > fieldset {
+    padding: 10px;
+    margin: 10px;
+ }
+
+legend{
+    text-align: center;
+    font-size: 1.2em;
+}
+section {
+    display: block;
+    box-shadow: 3px 3px 3px 3px white ;
+    width: 50rem;
+    padding: 10px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("consult.jpg") no-repeat;
+    margin: 30px 3%;
+    border: 2px solid hotpink;          /*This fulfills 3.2.2 E "CSS Background Styles d)Border and e)Border-style"*/
+    position: absolute;   
+    color: white;  
+    font-family: "Bradley Hand";
+    top: 90%;               
+    left: 50%;            
+    transform: translate(-50%,-50%); 
+}
+ section h1 {
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 2px 2px white ;
+    color: hsl(330, 100%, 50%); ;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+ /*This fulfills 3.2.2 A "Format using CSS a)Paragraphs*/
+ section p {
+    line-height: 1.2em;
+    margin: 15px 0px;
+    font-size: 1.5em;
+ }
+ /*This fulfills 3.2.3 B "Apply styles to webforms"*/
+ .formRow{
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin: 0.5em;
+ }
+ textarea {
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 100px;
+    width: 95%;
+ }
+ div.formRow>*{
+    text-align: center;
+ }
+ div#buttons>*{
+    background-color: pink;
+    margin-right: 10%;
+ }
+ div#buttons {
+    text-align: center;
+    width: 100%;
+ }
+ input[type='submit'], input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+ }
+
+/*This fulfills 3.2.3 C "Inline form validation using focus pseudo-class*/
+ input:focus, select:focus, textarea:focus {
+    background-color: rgb(220, 255, 220);
+}
+ /*This fulfills 3.2.2 D "Use of psuedo class d)focus"*/
+ input#zip:focus:valid,
+ input#phone:focus:valid,
+ input#mail:focus:valid {
+    background: rgb(220, 255, 220);
+ }
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+   background: red;
+}
+
+
+
+footer{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), rgb(255, 219, 226);
+    box-sizing: border-box;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    position: absolute;   
+    top: 180%;              
+
+}
+ol li{
+    display: inline;        
+}
+.footer-content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.footer-content h3{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+
+}
+footer.content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    margin: 1rem 0 3rem 0;
+}
+.socials a{
+    text-decoration: none; 
+    color: black;
+    padding: 5px 20px;                    
+    border-radius: 5rem; 
+}
+ol li a:hover{                        
+    background-color: hotpink;            
+    color: black; 
+    transition: 0.6s ease;
+}
+
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    ul li a{
+        font-size: 30px;
+    }
+    .logo img{
+        width: 130px;
+        height:auto; 
+    }
+    body{
+        min-height: 150vh;
+    }
+    footer{
+        box-sizing: border-box;
+        height: auto;
+        width: 100vw;
+        padding-top: 40px;
+        position: absolute;   
+        top: 150%;               
+    }
+    section {
+        width: 45rem;
+        padding: 10px;  
+        top: 70%;              
+        left: 45%;             
+     }
+}
+
+
+
+@media (max-width:768px){
+    ul li a{
+        display: block;
+        top: 100px; left:0; right:0;
+        background: transparent;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    }
+    header.navbar{
+        position: absolute;
+        top: 100px; left:0; right:0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    }
+    .logo img{
+        width: 110px;
+        height:auto; 
+    }
+    body{
+        min-height: 150vh;
+    }
+    footer{
+        box-sizing: border-box;
+        height: auto;
+        width: 100vw;
+        padding-top: 40px;
+        position: absolute;   
+        top: 140%;               
+    }
+    footer.socials{
+        display: block;
+        top: 100px; left:0; right:0;
+        background: transparent;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    }
+    /*This fulfills 3.2.7 D "Webform should be responsive*/
+    section {
+        width: 40rem;
+        padding: 10px;  
+        top: 70%;               
+        left: 47%;             
+     }
+     div#buttons {
+        text-align: center;
+        width: 90%;
+     }
+     textarea {
+        margin-top: 10px;
+        margin-left: 20px;
+        height: 100px;
+        width: 85%;
+     }
+}
+
+
+@media (max-width:691px) {
+    html{
+        font-size: 35%;
+    }
+    header{
+        padding: 1rem;
+    }
+    .logo img{
+        width: 120px;
+        height:auto; 
+    }
+    section {
+        width: 60rem;
+        padding: 7px;  
+        top: 70%;            
+        left: 47%;       
+     }
+     ul li a{
+        font-size: 20px;
+        }
+     div#buttons {
+        text-align: center;
+        width: 87%;
+     }
+     textarea {
+        margin-top: 10px;
+        margin-left: 20px;
+        height: 100px;
+        width: 85%;
+     }
+     footer{
+        box-sizing: border-box;
+        height: auto;
+        width: 100vw;
+        padding-top: 40px;
+        position: absolute;   
+        top: 140%;               
+    }
+    body{
+        min-height: 140vh;
+    }
+}

@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bradley Hand","Chalkduster";
+    box-sizing: border-box;
+    
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./backgroundimages/serviceback.png") no-repeat;
+    background-size:cover;
+    min-height: 170vh;
+}
+ul{
+    list-style-type: none;  
+    float: right;           
+    margin-top: 20px;       
+    font-size: 2rem;        
+}
+ul li{
+    display: inline;       
+}
+ul li a{
+    text-decoration: none;              
+    text-shadow: 2px 2px white;     
+    color: hsl(330, 100%, 50%);     
+    padding: 5px 20px;                    
+    border-radius: 5rem;                 
+    transition: 0.6s ease;           
+}
+ul li a:hover{                       
+    background-color: hotpink;          
+    color: black;                     
+}
+ul li.active a{                       
+    background-color: hotpink;           
+    color: black;                     
+}
+ol li a:visited{                      
+    color: whitesmoke; 
+    transition: 0.6s ease;
+}
+.logo img{                    
+    width: 150px;         
+    height:auto; 
+    border-radius: 50%;  
+    float: left;         
+}
+.main{                      
+    max-width: 1200px;   
+    margin: auto;       
+
+}
+
+
+
+
+section{
+    position: absolute;   
+    top: 20%;               
+    left: 5%;             
+    right: 5%;
+}
+section table{
+    width: 100%;
+}
+section h1{
+    text-align: center;    
+    color: hsl(330, 100%, 50%); 
+    text-shadow: 2px 2px white;  
+    font-size: 5rem;
+}
+
+table, td {
+    text-align: center;
+
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    border-spacing: 30px;
+  }
+table tr{
+    height: 200px;
+}
+td{
+    box-shadow: 0 0 6px 6px black;
+
+}
+.product1{
+    background-image: url("./servicesimages/product1.png");
+    background-size: cover;
+    font-size: 20px;
+    color: #9F2B68;
+    opacity: 0.8;           /*This fulfulls the requirement 3.2.2 H "Opacity Feature*/
+}
+.product2{
+    background-image: url("./servicesimages/product2.jpg");
+    background-size: cover;
+    font-size: 20px;
+    color: #DE3163;
+    opacity: 0.8;
+}
+.product3{
+    background-image: url("./servicesimages/product3.jpg");
+    background-size: cover;
+    font-size: 20px;
+    color: #F88379;
+    opacity: 0.8;
+}
+.product4{
+    background-image: url("./servicesimages/product4.jpg");
+    background-size:cover;
+    font-size: 20px;
+    color: crimson;
+    opacity: 0.8;
+}
+.product5{
+    background-image: url("./servicesimages/product5.jpg");
+    background-size: cover;
+    font-size: 20px;
+    color: #AA336A;
+    opacity: 0.8;
+}
+.product6{
+    background-image: url("./servicesimages/product6.png");
+    background-size: cover;
+    font-size: 20px;
+    color: #FF00FF;
+    opacity: 0.8;
+}
+.product7{
+    background-image: url("./servicesimages/product7.png");
+    background-size: cover;
+    font-size: 20px;
+    color: #DA70D6;
+    opacity: 0.8;
+}
+.product8{
+    background-image: url("./servicesimages/product8.png");
+    background-size: cover;
+    font-size: 20px;
+    color: #E30B5C;
+    opacity: 0.8;
+}
+.product9{
+    background-image: url("./servicesimages/product9.jpg");
+    background-size: cover;
+    font-size: 20px;
+    color: #953553;
+    opacity: 0.8;
+}
+.product10{
+    background-image: url("./servicesimages/product10.jpg");
+    background-size: cover;
+    font-size: 20px;
+    color: #F33A6A;
+    opacity: 0.8;
+}
+.product11{
+    background-image: url("./servicesimages/product11.jpg");
+    background-size: cover;
+    font-size: 20px;
+    color: #FA8072;
+    opacity: 0.8;
+}
+.product12{
+    background-image: url("./servicesimages/product12.jpg");
+    background-size: cover;
+    font-size: 20px;
+    color: #E37383;
+    opacity: 0.8;
+}
+span{
+    background-color: #FFF5EE;
+}
+
+
+
+  /*Styling the Footer section starts here*/
+  footer{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), rgb(255, 219, 226);
+    box-sizing: border-box;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    position: absolute;   
+    top: 170%;         
+
+}
+ol li{
+    display: inline;       
+}
+.footer-content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.footer-content h3{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+
+}
+footer.content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    margin: 1rem 0 3rem 0;
+}
+.socials a{
+    text-decoration: none; 
+    color: black;
+    padding: 5px 20px;                    
+    border-radius: 5rem; 
+}
+ol li a:hover{                       
+    background-color: hotpink;          
+    color: black; 
+        transition: 0.6s ease;
+}
+/*Styling the Footer section ends here*/
+
+
+
+/*Responsiveness*/
+  @media (max-width:991px) {
+    html{
+        font-size: 100%;
+    }
+    header{
+        padding: 2rem;
+    }
+
+    .logo img{
+        width: 130px;
+        height:auto; 
+    }
+    footer{ 
+        top: 200%;               
+    }
+    section {
+        width: 40rem;
+        padding: 10px;  
+        top: 40%;           
+        left: 5%;              
+    }
+    body{
+        min-height: 200vh;
+    }
+}
+
+
+
+@media (max-width:768px){
+    ul li a{
+        display: block;
+        top: 100px; left:0; right:0;
+        background: transparent;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        font-size: 30px;
+    }
+    header.navbar{
+        position: absolute;
+        top: 100px; left:0; right:0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    }
+    .logo img{
+        width: 120px;
+        height:auto; 
+    }
+    section {
+        width: 30rem;
+        padding: 10px;  
+        top: 40%;              
+        left: 2%;           
+    }
+}
+
+@media (max-width: 600px) {
+    html{
+        font-size: 35%;
+    }
+    header{
+        padding: 1rem;
+    }
+    .logo img{
+        width: 130px;
+        height:auto; 
+    }
+    ul li a{
+        display: block;
+        top: 100px; left:0; right:0;
+        background: transparent;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        font-size: 30px;
+    }
+    footer{
+        top: 180%; 
+    }
+    ul li a{
+        font-size: 25px;
+        }
+
+        body{
+            min-height: 185vh;
+        }
+
+        section {
+            width: 33rem;
+            padding: 10px;  
+            top: 30%;             
+            left: 2%;            
+        }
+
+        table, td {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-spacing: 35px;
+          }     
+          
+          section h1{
+            text-align: center;    
+            font-size: 5rem;
+            margin-left: 130%;
+        }
+}

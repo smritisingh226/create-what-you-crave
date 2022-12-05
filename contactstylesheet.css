@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bradley Hand","Chalkduster";
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: url("./backgroundimages/calanderback.png") no-repeat;
+    background-size:cover;
+    min-height: 150vh;
+}
+ul{
+    list-style-type: none;  
+    float: right;          
+    margin-top: 20px;      
+    font-size: 2rem;        
+}
+ul li{
+    display: inline;       
+}
+ul li a{
+    text-decoration: none;             
+    text-shadow: 2px 2px white;          
+    color: hsl(330, 100%, 50%);     
+    padding: 5px 20px;                    
+    border-radius: 5rem;             
+    transition: 0.6s ease;          
+}
+ul li a:hover{                     
+    background-color: hotpink;            
+    color: black;                     
+}
+ul li.active a{                        
+    background-color: hotpink;         
+    color: black;                  
+}
+ol li a:visited{                      
+    color: whitesmoke; 
+    transition: 0.6s ease;
+}
+.logo img{                 
+    width: 150px;       
+    height:auto; 
+    border-radius: 50%;    
+    float: left;         
+}
+.main{                      
+    max-width: 1200px;   
+    margin: auto;          
+}
+
+
+
+section{
+    position: absolute;  
+    top: 20%;              
+    left: 5%;             
+    right: 5%;
+}
+section h2{
+    text-align: center;
+    color: palevioletred;
+    text-shadow: 2px 2px red;  
+    font-size: 5rem;
+    opacity: 0.5;
+}
+sub-section {
+    float: left;
+    width: 50%;
+    height: 730px; 
+    padding: 20px;
+  }
+sub-section p{
+    top:100%;
+}
+sub-section img{
+    width: 80%;
+    height: 670px;
+    display: block;
+    margin-left: 10%;
+    align-items: center;
+    border: 8px solid pink; 
+    box-shadow: 0 0 5px 5px #F88379;
+ }
+ article h1{
+    font-size: 3rem;
+    color: black;
+    text-shadow: 2px 2px pink;
+ }
+  article {
+    color: #000000;
+    text-shadow: 1px 1px black;
+    box-shadow: 0 0 5px 5px #F88379;
+    font-size: 1.5rem;
+    width: 35%;
+    float: left;
+    display: block;
+    margin-left: 0.5%;
+    margin-top: 2%;
+    text-align: center;
+    border: 8px solid pink;
+    padding: 20px;
+    height: 670px;
+    opacity: 0.9;
+  }
+  article a:visited{
+    color: red;
+  }
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+footer{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), rgb(255, 219, 226);
+    box-sizing: border-box;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    position: absolute;   
+    top: 140%;           
+}
+ol li{
+    display: inline;       
+}
+.footer-content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+.footer-content h3{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+footer.content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    margin: 1rem 0 3rem 0;
+}
+.socials a{
+    text-decoration: none; 
+    color: black;
+    padding: 5px 20px;                    
+    border-radius: 5rem; 
+}
+ol li a:hover{                         
+    background-color: hotpink;            
+    transition: 0.6s ease;
+}
+
+
+
+
+  @media (max-width:991px) {
+    html{
+        font-size: 80%;
+    }
+    header{
+        padding: 2rem;
+    }
+    .logo img{
+        width: 130px;
+        height:auto; 
+    }
+    footer{ 
+        top: 200%;               
+    }
+    body{
+        min-height: 200vh;
+    }
+    section{
+        top:25%
+    }
+    section h2{
+        font-size: 50px;
+    }
+    sub-section, article {
+        width: 100%;
+        height: auto;
+    }
+    sub-section img{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    article {
+        font-size: 20px;
+    }
+    
+}
+
+
+
+@media (max-width:768px){
+    ul li a{
+        display: block;
+        top: 100px; left:0; right:0;
+        background: transparent;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    }
+    header.navbar{
+        position: absolute;
+        top: 100px; left:0; right:0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    }
+    .logo img{
+        width: 120px;
+        height:auto; 
+    }
+    body{
+        min-height: 200vh;
+    }
+    section{
+        top:25%
+    }
+    section h2{
+        font-size: 50px;
+    }
+    sub-section, article {
+        width: 100%;
+        height: auto;
+    }
+    sub-section img{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+     }
+    article {
+        font-size: 20px;
+    }
+    footer{ 
+        top: 190%;               
+    }
+}
+
+@media (max-width: 600px) {
+    html{
+        font-size: 35%;
+    }
+    header{
+        padding: 1rem;
+    }
+    .logo img{
+        width: 130px;
+        height:auto; 
+    }
+    body{
+        min-height: 195vh;
+    }
+    footer{
+        top: 190%; 
+    }
+    ul li a{
+        font-size: 25px;
+        }
+    section{
+        top:25%
+    }
+    section h2{
+        font-size: 50px;
+    }
+    sub-section, article {
+        width: 100%;
+        height: auto;
+    }
+    sub-section img{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    article {
+        font-size: 20px;
+    }
+}
+

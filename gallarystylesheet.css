@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bradley Hand","Chalkduster";
+    
+}
+
+
+body{
+    background-color: #FFF3F1;
+    background-size:cover;
+    min-height: 510vh;
+
+}
+ul{
+    list-style-type: none;  
+    float: right;          
+    margin-top: 20px;      
+    font-size: 2rem;     
+}
+ul li{
+    display: inline;      
+}
+ul li a{
+    text-decoration: none;             
+    text-shadow: 2px 2px hsl(330, 100%, 50%);        
+    color: black;      
+    padding: 5px 20px;                    
+    border-radius: 5rem;              
+    transition: 0.6s ease;             
+}
+ul li a:hover{                       
+    background-color: hotpink;           
+    color: white;                       
+}
+ul li.active a{                         
+    background-color: hotpink;        
+    color: white;            
+
+}
+ol li a:visited{                      
+    color: whitesmoke; 
+    transition: 0.6s ease;
+}
+.logo img{                  
+    width: 150px;       
+    height:auto; 
+    border-radius: 50%;  
+    float: left;         
+}
+.main{                      
+    max-width: 1200px;      
+    margin: auto;          
+}
+
+
+section{
+    position: absolute;   
+    top: 22%;               
+    left: 5%;             
+    right: 5%;
+}
+ /*This fulfills 3.2.2 A "Format using CSS e)Tables"*/
+table {
+    width:100%;   
+}
+table td {
+    border: solid 1px #666;         
+    width: 31%;                      
+    padding-left: 3px;
+    padding-right: 3px;
+}
+/*This fulfills 3.2.2 D "Use of pseudo class-  e)First-of-type"*/
+td img:first-of-type{ 
+    border: 8px solid white;     
+}
+  /*This fulfills 3.2.2 D "Use of pseudo class-  f)Last-of-type"*/
+td img:last-of-type{
+    padding:5px                        
+}
+td img{
+    width: 94%;
+    display: block;
+    align-items: center;
+}
+tr:nth-child(even) {
+    background-color:#CEDAA9;         
+}
+tr:nth-child(odd) {
+    background-color: #A6DEDA;     
+}
+
+
+
+
+
+  /*Styling the Footer section starts here*/
+footer{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), rgb(255, 219, 226);
+    box-sizing: border-box;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    position: absolute;   
+    top: 530%;              
+}
+ol li{
+    display: inline;       
+}
+.footer-content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+.footer-content h3{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+footer.content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    margin: 1rem 0 3rem 0;
+}
+.socials a{
+    text-decoration: none; 
+    color: black;
+    padding: 5px 20px;                    
+    border-radius: 5rem; 
+}
+ol li a:hover{                     
+    background-color: hotpink;          
+    color: black; 
+    transition: 0.6s ease;
+}
+
+
+
+
+/*Responsiveness*/
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    ul li a{
+        font-size: 30px;
+    }
+    .logo img{
+        width: 130px;
+        height:auto; 
+    }
+    footer{
+        box-sizing: border-box;
+        height: auto;
+        width: 100vw;
+        padding-top: 40px;
+        position: absolute;   
+        top: 430%;               
+    }
+    section {
+        width:90%;
+        padding: 10px;  
+        top: 20%;              
+        left: 5%;        
+     }
+     body{
+        min-height: 140vh;
+    }
+}
+@media (max-width:768px){
+    ul li a{
+        display: block;
+        font-size: 25px;
+
+    }
+    .logo img{
+        width: 200px;
+        height:auto; 
+    }
+
+    footer{
+        top: 330%; 
+    }
+    body{
+        min-height: 340vh;
+    }
+    section {
+        width: 80%;
+        padding: 10px;  
+        top: 30%;           
+        left: 5%;            
+    }
+
+}
+@media (max-width:691px) {
+    ul li a{
+        display: block;
+        font-size: 25px;
+
+    }
+    .logo img{
+        width: 200px;
+        height:auto; 
+    }
+
+    footer{
+        top: 300%; 
+    }
+    body{
+        min-height: 300vh;
+    }
+    section {
+        width: 80%;
+        padding: 10px;  
+        top: 35%;           
+        left: 2%;          
+    }
+}
+
+@media (max-width:600px) {
+    ul li a{
+        display: block;
+        font-size: 25px;
+
+    }
+    .logo img{
+        width: 200px;
+        height:auto; 
+    }
+
+    footer{
+        top: 270%; 
+    }
+    body{
+        min-height: 270vh;
+    }
+    section {
+        width: 80%;
+        padding: 10px;  
+        top: 30%;          
+        left: 2%;         
+    }
+}
+

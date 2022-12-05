@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Bradley Hand","Chalkduster";
+    
+}
+
+
+/*Styling the header section starts here*/
+body{
+    /*This fulfills requirement 3.2.2 A "FORMAT APPEARANCE OF- d) Background images"- Styling the background image*/
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("./backgroundimages/homeback.jpg") no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    background-position: center;
+}
+/*This fulfills requirement 3.2.2 A "FORMAT APPEARANCE OF- b) Lists"*/
+ul{
+    list-style-type: none; 
+    float: right; 
+    margin-top: 25px;
+    font-size: 2rem;
+}
+ul li{
+    display: inline;
+}
+ul li a{
+    text-decoration: none;
+    text-shadow: 2px 2px hsl(330, 100%, 50%);    
+    color: black;      
+    padding: 5px 20px;                    
+    border-radius: 5rem;           
+    transition: 0.6s ease;      
+}
+/*This fulfills requirement 3.2.2 D "Use of Psuedo class- c)Hover"*/
+ul li a:hover{   
+    background-color: hotpink;            
+    color: white;                
+}
+/*This fulfills requirement 3.2.2 D "Use of Psuedo class [b)Active]"*/
+ul li.active a{                         
+    background-color: hotpink;         
+    color: white;     
+}
+/*This fulfulls the requirement 3.2.2 D "Use of psuedo class a)Visited"*/
+ol li a:visited{                      
+    color: whitesmoke; 
+    transition: 0.6s ease;
+}
+.logo img{                
+    width: 150px;  
+    height:auto; 
+    border-radius: 50%; 
+    float: left;
+}
+.main{                      
+    max-width: 1200px;    
+    margin: auto;         
+
+}
+.title{                     
+    position: absolute;     
+    top: 50%;              
+    left: 50%;   
+    transform: translate(-50%,-50%); 
+}
+
+/*This fulfills requirement 3.2.2 A "FORMAT APPEARANCE OF- c) Headers"*/
+.title h1{           
+    font-family: "Chalkduster";  
+    color: hotpink;
+    font-size: 15rem;
+    text-shadow: 5px 5px white;
+}
+.title h2{                
+    color: hotpink;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px white;
+}
+.ebutton{
+    position: absolute;     
+    top: 90%;          
+    left: 60%;    
+    transform: translate(-50%,-50%); 
+}
+.pbutton{
+    position: absolute;     
+    top: 90%;           
+    left: 40%;  
+    transform: translate(-50%,-50%); 
+}
+.pbutton,.ebutton{
+    border:2px solid hotpink;
+    padding: 10px 30px;
+    border-radius: 5rem;
+    text-decoration: none;
+    color:hsl(330, 100%, 50%); ;
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px white;                     /*This fulfills requirement 3.2.2 G "a)Use of text-shadow"*/
+    box-shadow: 2px 2px 2px 2px white;              /*This fulfills requirement 3.2.2 G "b)Use of box-shadow"*/
+    background-color: #ffe6e6;
+}
+.pbutton:hover, .ebutton:hover{
+    background-color: hotpink;       
+    color: HSLA(0, 100%, 0%,1);                    /*This fulfills requirement 3.2.2 C "Use of HSLA"*/
+    transition: 0.6s ease;                      /*This fulfills requirement 3.2.5 B "Use of transition"*/
+}
+/*Styling the header section ends here*/
+
+
+
+/*Styling the Footer section starts here*/
+footer{
+    /*This fulfills requirement 3.2.2 C "Use of RBGA"*/
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), rgb(255, 219, 226);
+    box-sizing: border-box;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    position: absolute;   
+    top: 120%;           
+
+}
+ol li{
+    display: inline;      
+}
+.footer-content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.footer-content h3{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+
+}
+footer.content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    margin: 1rem 0 3rem 0;
+}
+.socials a{
+    text-decoration: none; 
+    color: black;
+    padding: 5px 20px;                    
+    border-radius: 5rem; 
+}
+ol li a:hover{                      
+    background-color: hotpink;   
+    color: black; 
+    transition: 0.6s ease;
+}
+/*Styling the Footer section ends here*/
+
+
+
+/*Responsiveness*/
+/*This fulfills 3.2.7 A "Responsive Website Design"*/
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    ul li a{
+        font-size: 30px;
+    }
+    /*This fulfills 3.2.7 C "Images should be Responsive"*/
+    .logo img{              
+        width: 130px;
+        height:auto; 
+    }
+    footer{
+        box-sizing: border-box;
+        height: auto;
+        width: 100vw;
+        padding-top: 40px;
+        position: absolute;   
+        top: 100%;               
+    }
+}
+
+
+
+@media (max-width:768px){
+    ul li a{
+        display: block;
+        top: 100px; left:0; right:0;
+        background: transparent;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        font-size: 30px;
+    }
+    header.navbar{
+        position: absolute;
+        top: 100px; left:0; right:0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    }
+    .logo img{
+        width: 120px;
+        height:auto; 
+    }
+    footer.socials{
+        display: block;
+        top: 100px; left:0; right:0;
+        background: transparent;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+    }
+    .pbutton,.ebutton{
+        padding: 5px 20px;
+        border-radius: 3rem;
+        font-size: 2rem;
+        top :70%;
+    }
+}
+
+
+@media (max-width:691px) {
+    html{
+        font-size: 35%;
+    }
+    header{
+        padding: 1rem;
+    }
+    .logo img{
+        width: 130px;
+        height:auto; 
+    }
+    .pbutton,.ebutton{
+        padding: 5px 20px;
+        border-radius: 2rem;
+        font-size: 2rem;
+        top: 70%;
+    }
+    ul li a{
+        font-size: 25px;
+        }
+}
+
+
